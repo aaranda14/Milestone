@@ -1,0 +1,15 @@
+﻿   +-----------------+             +---------+
+   |     Inventory   |             |  Item   |
+   +-----------------+             +---------+
+   | -items: Item[]   | 1--------*>| -id: int|
+   | -capacity: int  |             | -name: string|
+   | -numItems: int   |             | -price: float|
+   | -idGenerator: int|             +---------+
+   +-----------------+
+   | +Inventory()    |
+   | +addItem(item: Item): void   |
+   | +removeItem(id: int): void   |
+   | +getItem(id: int): Item      |
+   | +getAllItems(): Item[]       |
+   | +getAvailableCapacity(): int |
+   +-----------------+
